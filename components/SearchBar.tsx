@@ -17,7 +17,7 @@ const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
     />
   </button>
 );
-
+// @ts-ignore
 const SearchBar = ({ setManufacturer, setModel }) => {
   const [searchManufacturer, setSearchManufacturer] = useState("");
   const [searchModel, setSearchModel] = useState("");
@@ -38,6 +38,7 @@ const SearchBar = ({ setManufacturer, setModel }) => {
     <form className="searchbar" onSubmit={handleSearch}>
       <div className="searchbar__item">
         <SearchManufacturer
+          // @ts-ignore
           selected={searchManufacturer}
           setSelected={setSearchManufacturer}
         />

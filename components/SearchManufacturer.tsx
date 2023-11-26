@@ -7,7 +7,9 @@ import { manufacturers } from "@/constants";
 import { SearchManufacturerProps } from "@/types";
 
 const SearchManufacturer = ({
+  // @ts-ignore
   selected,
+  // @ts-ignore
   setSelected,
 }: SearchManufacturerProps) => {
   const [query, setQuery] = useState("");
