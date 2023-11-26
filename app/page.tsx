@@ -63,6 +63,7 @@ export default function Home() {
             <CustomFilter
               title="year"
               options={yearsOfProduction}
+              // @ts-ignore
               setFilter={setYear}
             />
           </div>
@@ -97,6 +98,7 @@ export default function Home() {
         ) : (
           <div className="home_error-container">
             <h2 className="text-black textl-xl font bold">Oops, no results</h2>
+            {/*@ts-ignore */}
             <p>{allCars?.message}</p>
           </div>
         )}
